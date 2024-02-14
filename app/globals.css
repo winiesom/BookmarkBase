@@ -75,7 +75,7 @@
 }
 
 .addbookmark__error, .addbookmark__success {
-  @apply absolute top-0 right-0 mt-0 mr-20 z-10 py-1 pl-5 rounded w-96 h-auto;
+  @apply absolute top-0 right-0 mt-0 mr-20 z-10 py-1 pl-5 rounded w-60 h-auto;
 
 }
 
