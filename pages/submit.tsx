@@ -69,7 +69,7 @@ const Submit = ({ onSubmitLink, editIndex, bookmarks }: SubmitProps) => {
       )}
       {success && (
         <div className={`addbookmark__success ${success && 'slide-in'} bg-green-100 border-green-300 text-green-700`}>
-          <div className="font-semibold text-sm mb-3">&#10004; <span className="ml-2">Success</span></div>
+          <div className="font-semibold text-sm mb-1">&#10004; <span className="ml-2">Success</span></div>
           <div><span className="opacity-0">&#9447;</span>
             <span className="ml-1 text-xs">&#8226; Bookmark has been added</span>
           </div>
@@ -85,18 +85,11 @@ const Submit = ({ onSubmitLink, editIndex, bookmarks }: SubmitProps) => {
           id="newBookmark"
           autoComplete="newBookmark"
           className="addbookmark__input"
-          placeholder="http://example.com"
+          placeholder="Paste a url - http://example.com and hit 'Enter'"
           value={newBookmark}
           onChange={handleChange}
         />
 
-        {/* Submit button */}
-        <CustomButton
-          title="&#65291;"
-          containerStyles="custom-button"
-          type="submit"
-          handleClick={handleSubmit}
-        />
       </div>
     </form>
   );
