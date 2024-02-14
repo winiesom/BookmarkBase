@@ -1,6 +1,5 @@
 "use client";
 
-import Image from 'next/image';
 import { CustomButtonProps } from '@/types';
 
 const CustomButton = ({ title, containerStyles, handleClick, btnType }: CustomButtonProps) => {
@@ -17,3 +16,4 @@ const CustomButton = ({ title, containerStyles, handleClick, btnType }: CustomBu
 }
 
 export default CustomButton
+

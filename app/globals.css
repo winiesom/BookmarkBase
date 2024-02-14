@@ -39,7 +39,92 @@
 /* END: General styles */
 
 
+/* START: Hero styles */
+.hero {
+  @apply flex xl:flex-row flex-col gap-5 relative z-0 max-w-[1440px] mx-auto;
+  /* background: linear-gradient(to bottom left, #ECA400 40%, #ffffff 40%) 0 0 / 100% 100%; */
+ 
+}
 
+.hero__title {
+  @apply 2xl:text-[72px] sm:text-[64px] text-[50px] font-extrabold;
+}
+
+.hero__subtitle {
+  @apply text-[27px] text-black-100 font-light mt-5;
+}
+
+/* END: Hero styles */
+
+
+/* START: Addbookmark styles */
+
+.addbookmark {
+  @apply flex flex-col max-sm:flex-col w-full relative;
+}
+.addbookmark__label {
+  @apply block text-sm font-medium leading-6 text-gray-900 mt-20 mb-5 ml-2;
+}
+
+.addbookmark__input-container {
+  @apply flex items-center max-sm:w-full relative;
+}
+
+.addbookmark__input {
+  @apply flex-grow w-full h-[48px] pl-12 p-4 bg-transparent border border-gray-300 rounded-full max-sm:rounded-full outline-none cursor-pointer text-sm;
+}
+
+.addbookmark__error, .addbookmark__success {
+  @apply absolute top-0 right-0 mt-0 mr-20 z-10 py-1 pl-5 rounded w-96 h-auto;
+
+}
+
+.addbookmark__error.slide-in, .addbookmark__success.slide-in {
+  @apply opacity-100;
+}
+
+.addbookmark__error {
+  @apply bg-red-100 border-red-300 text-red-700;
+}
+
+.addbookmark__success {
+  @apply bg-green-100 border-green-300 text-green-700;
+}
+
+
+.custom-button {
+  @apply bg-primary-yellow text-white rounded-full ml-4 flex justify-center items-center font-bold;
+  width: 48px; 
+  height: 48px; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/* END: Addbookmark styles */
+
+
+/* START: Bookmark list */
+
+.table__border {
+  @apply border border-gray-300 rounded-lg mt-10 overflow-x-auto p-4;
+}
+
+.tablehead_col{
+  @apply px-6 py-4 text-left text-xs font-bold text-gray-500 bg-gray-100 uppercase tracking-wider;
+}
+
+.tablebody__tr{
+  @apply border-b border-gray-300 text-sm text-gray-700;
+}
+
+.tablebody__content {
+  @apply px-6 py-4 max-w-[400px] overflow-scroll;
+}
+
+.table__pagination-controls {
+  @apply mx-1 px-4 py-2 bg-gray-200 rounded-lg text-gray-700;
+}
+
+/* END: Bookmark list */
 
 
 /* START: Footer styles */
