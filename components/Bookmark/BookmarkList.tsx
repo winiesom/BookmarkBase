@@ -6,7 +6,7 @@ import { BookmarkListProps } from '@/types';
 
 const BookmarkList = ({ bookmarks, onEditBookmark, onDeleteBookmark }: BookmarkListProps) => {
   const [page, setPage] = useState<number>(1);
-  const rowsPerPage = 5;
+  const rowsPerPage = 20;
 
   const indexOfLastBookmark = page * rowsPerPage;
   const indexOfFirstBookmark = indexOfLastBookmark - rowsPerPage;
