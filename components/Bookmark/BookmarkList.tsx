@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Link from "next/link";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEdit, faTrash } from '@fortawesome/free-solid-svg-icons';
 
@@ -40,7 +41,7 @@ const BookmarkList = ({ bookmarks, onEditBookmark, onDeleteBookmark }: BookmarkL
           <tbody>
             {currentBookmarks.map((bookmark, index) => (
               <tr key={index} className="tablebody__tr">
-                <td className="tablebody__content">{bookmark}</td>
+                <td className="tablebody__content"><Link href={bookmark} target="_blank" className="hover:text-blue-800">{bookmark}</Link></td>
                 <td className="px-6 py-4">
                   <button className="text-indigo-400 hover:text-indigo-900" onClick={() => handleEditBookmark(index)}>
                     <FontAwesomeIcon icon={faEdit} />
